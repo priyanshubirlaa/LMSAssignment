@@ -1,10 +1,13 @@
 # API Documentation
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 Two custom endpoints exist in this app. All other data access (note create/read/update/delete)
 goes directly from the browser to Supabase via the Supabase JS client and is authorized by
 Postgres row-level security, not a custom API — see `supabase/schema.sql`.
 
-Base URL: `https://<your-deployment>.vercel.app` (or `http://localhost:3000` in dev).
+Base URL: `https://lms-assignment-three.vercel.app` (or `http://localhost:3000` in dev).
 
 ---
 

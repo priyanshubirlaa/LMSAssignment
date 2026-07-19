@@ -1,5 +1,8 @@
 # Vibe Coding Spec — AI Notes
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 A working spec for building this app with an AI pair-programmer (Claude Code), covering intent,
 constraints, and the rules the assistant should follow when generating or editing code in this
 repo.

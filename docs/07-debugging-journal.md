@@ -1,5 +1,8 @@
 # Debugging Journal
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 Real issues hit while building and hardening this project, in the order they occurred.
 
 ---

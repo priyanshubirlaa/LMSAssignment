@@ -1,5 +1,8 @@
 # Project Proposal — AI Notes
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 ## Problem Statement
 
 People capture quick notes throughout the day — meeting takeaways, article highlights, half-formed

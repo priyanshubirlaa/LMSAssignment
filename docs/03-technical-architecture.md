@@ -1,5 +1,8 @@
 # Technical Architecture — AI Notes
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 ## Tech Stack
 
 | Layer | Choice | Why |

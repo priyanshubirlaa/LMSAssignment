@@ -1,5 +1,8 @@
 # Product Requirements Document — AI Notes
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 ## 1. Problem
 
 Free-text notes accumulate faster than anyone re-reads them. Without a summary or tags, old notes

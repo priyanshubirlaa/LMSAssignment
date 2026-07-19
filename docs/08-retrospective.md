@@ -1,5 +1,8 @@
 # Retrospective
 
+**Repository**: https://github.com/priyanshubirlaa/LMSAssignment
+**Live demo**: https://lms-assignment-three.vercel.app/
+
 > Draft based on how this project actually went. Since this is meant to be a personal reflection,
 > read it over and adjust anything that doesn't match your own experience before submitting.
 
