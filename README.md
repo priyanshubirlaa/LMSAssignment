@@ -3,7 +3,7 @@
 A tiny full-stack notes app: write notes, get an AI-generated summary and topic tags for any of
 them with one click, all on free-tier infrastructure.
 
-**Live demo**: _add your deployed Vercel URL here once deployed (see Deployment section)_
+**Live demo**: https://lms-assignment-three.vercel.app/
 **Repository**: https://github.com/priyanshubirlaa/LMSAssignment
 
 ## Features
