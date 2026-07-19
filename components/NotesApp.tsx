@@ -7,10 +7,17 @@ import type { Note } from "@/lib/types";
 
 type AiResult<T> = { data?: T; error?: string; retryAfterSeconds?: number };
 
-async function callAi<T>(endpoint: string, content: string): Promise<AiResult<T>> {
+async function callAi<T>(
+  endpoint: string,
+  content: string,
+  accessToken: string
+): Promise<AiResult<T>> {
   const res = await fetch(endpoint, {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${accessToken}`,
+    },
     body: JSON.stringify({ content }),
   });
   const data = await res.json();
@@ -129,7 +136,11 @@ export default function NotesApp({ session }: { session: Session }) {
   async function handleSummarize(note: Note) {
     setSummarizingId(note.id);
     setError(null);
-    const result = await callAi<{ summary: string }>("/api/summarize", note.content);
+    const result = await callAi<{ summary: string }>(
+      "/api/summarize",
+      note.content,
+      session.access_token
+    );
     setSummarizingId(null);
 
     if (result.error || !result.data) {
@@ -153,7 +164,11 @@ export default function NotesApp({ session }: { session: Session }) {
   async function handleGenerateTags(note: Note) {
     setTaggingId(note.id);
     setError(null);
-    const result = await callAi<{ tags: string[] }>("/api/tags", note.content);
+    const result = await callAi<{ tags: string[] }>(
+      "/api/tags",
+      note.content,
+      session.access_token
+    );
     setTaggingId(null);
 
     if (result.error || !result.data) {
